@@ -1,4 +1,6 @@
-package com.kobaken0029.dagger2demo;
+package com.kobaken0029.dagger2demo.di;
+
+import com.kobaken0029.dagger2demo.MyApplication;
 
 import dagger.Module;
 

@@ -1,4 +1,4 @@
-package com.kobaken0029.dagger2demo;
+package com.kobaken0029.dagger2demo.di;
 
 import android.app.Activity;
 
