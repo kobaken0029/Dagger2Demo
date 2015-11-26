@@ -1,5 +1,7 @@
 package com.kobaken0029.dagger2demo.di;
 
+import android.content.Context;
+
 import com.kobaken0029.dagger2demo.MyApplication;
 import com.kobaken0029.dagger2demo.model.Nozomi;
 import com.kobaken0029.dagger2demo.model.SchoolIdol;
@@ -15,6 +17,12 @@ public class ApplicationModule {
 
     public ApplicationModule(MyApplication application) {
         mApplicaiton = application;
+    }
+
+    @Provides
+    @Singleton
+    Context provideApplicationContext() {
+        return mApplicaiton.getApplicationContext();
     }
 
     @Provides
